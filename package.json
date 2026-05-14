@@ -1,0 +1,17 @@
+{
+  "name": "homiesisocool",
+  "version": "1.0.0",
+  "description": "A Geometry Dash Challenge List website with pastel purple and pink theme",
+  "main": "index.html",
+  "scripts": {
+    "start": "open index.html"
+  },
+  "keywords": [
+    "geometry-dash",
+    "challenge-list",
+    "homies",
+    "website"
+  ],
+  "author": "MakoL5",
+  "license": "MIT"
+}

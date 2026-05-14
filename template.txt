@@ -1,0 +1,104 @@
+/*=============================================================================*/
+/* HOMIES LIST - CHALLENGE DATA TEMPLATE */
+/*=============================================================================*/
+
+How to add a new challenge to the list:
+
+1. Open js/list.js
+2. Copy and paste this template at the end of the list array (before the closing bracket)
+3. Fill in all the information
+4. Save and test locally
+5. Push to GitHub
+
+/*=============================================================================*/
+{
+  vids: [
+    {
+      user: "Player Name",
+      link: "https://www.youtube.com/watch?v=VIDEO_ID or medal.tv link",
+      percent: 100,
+      hz: "360hz",
+    },
+    {
+      user: "Another Player",
+      link: "VIDEO_LINK",
+      percent: 100,
+      hz: "240hz",
+    },
+  ],
+  name: "Challenge Name Here",
+  author: "Creator Name [Verifier Name]",
+  more: "Additional creator information if needed",
+  desc: "A description of what the challenge is about",
+  id: 12345678,
+  pass: 123456,
+  percentToQualify: 100,
+  verificationVid: "YOUTUBE_VIDEO_ID_ONLY",
+  phacked: false,
+  hacked: false
+},
+/*=============================================================================*/
+
+FIELD EXPLANATIONS:
+
+• vids: Array of record submissions
+  - user: The player's username
+  - link: Full YouTube or Medal.tv link to the completion video
+  - percent: Completion percentage (0-100)
+  - hz: Monitor refresh rate (144hz, 240hz, 360hz, etc)
+
+• name: The challenge/level name
+
+• author: Creator name
+  Format: "Creator [Verifier]" if verified by someone
+  Example: "John Doe [Jane Smith]" means John created it, Jane verified it
+
+• more: Extra info about creators (use if multiple creators)
+
+• desc: Challenge description for players to read
+
+• id: Geometry Dash level ID number
+
+• pass: Geometry Dash level password
+
+• percentToQualify: Minimum % needed to place on the leaderboard
+
+• verificationVid: YouTube video ID for the official verification
+  (Just the ID, not the full URL! Example: dQw4w9WgXcQ)
+
+• phacked: Set to true if you SUSPECT the level might be hacked
+
+• hacked: Set to true if the level is CONFIRMED hacked
+
+/*=============================================================================*/
+
+EXAMPLE:
+
+{
+  vids: [
+    {
+      user: "litdude",
+      link: "https://www.youtube.com/watch?v=vf87NTxeHNI",
+      percent: 100,
+      hz: "360hz",
+    },
+    {
+      user: "Willow",
+      link: "https://www.youtube.com/watch?v=djyPOYUANjs",
+      percent: 100,
+      hz: "240hz",
+    },
+  ],
+  name: "Homie Challenge",
+  author: "Cool Creator [Homies Verification Team]",
+  more: "Created by Cool Creator, verified by the Homies team",
+  desc: "An insanely difficult challenge that tests your skills to the limit",
+  id: 81835814,
+  pass: 123456,
+  percentToQualify: 100,
+  verificationVid: "ydYqELe-uA8",
+  phacked: false,
+  hacked: false
+},
+
+/*=============================================================================*/
